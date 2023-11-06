@@ -1,4 +1,4 @@
-import React, { ChangeEvent, HTMLInputTypeAttribute } from "react";
+import React, { ChangeEventHandler, HTMLInputTypeAttribute } from "react";
 import TextField from "@mui/material/TextField";
 
 import { TFieldAdornments } from "../adornment/types"
@@ -13,7 +13,7 @@ interface IBaseTextFieldProps {
     showError?: boolean;
     errorMessage?: string;
     adornments?: TFieldAdornments;
-    onChange?: (e: ChangeEvent) => void;
+    onChange?: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
 };
 
 const defaultProps = {

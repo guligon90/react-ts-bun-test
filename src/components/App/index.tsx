@@ -1,7 +1,7 @@
 import React from "react";
 import UserRegistrationForm from "../forms/UserRegistration";
 
-import "./styles.css"
+import "./styles.scss"
 
 const App = () => {
     return <UserRegistrationForm />
