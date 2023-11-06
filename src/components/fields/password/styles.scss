@@ -1,0 +1,8 @@
+// Inhibit the password toggle from Microsoft Edge
+// to automatically apeear when the TextInput type
+// changes to "password"
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
